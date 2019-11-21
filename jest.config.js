@@ -1,5 +1,3 @@
-const sveltePreprocess = require("svelte-preprocess");
-
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
 
@@ -11,10 +9,7 @@ module.exports = {
   roots: ["<rootDir>/src/", "<rootDir>/tests/"],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  setupFilesAfterEnv: [
-    "@testing-library/jest-dom/extend-expect"
-    // ... other setup files ...
-  ],
+  setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
 
   // The test environment that will be used for testing
   testEnvironment: "node",
@@ -28,12 +23,7 @@ module.exports = {
   // A map from regular expressions to paths to transformers
   transform: {
     "^.+\\.js$": "babel-jest",
-    "^.+\\.svelte$": [
-      "jest-transform-svelte",
-      {
-        preprocess: sveltePreprocess()
-      }
-    ]
+    "^.+\\.svelte$": ["jest-transform-svelte"]
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
