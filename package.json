@@ -29,5 +29,22 @@
     "prettier-plugin-svelte": "^0.7.0",
     "svelte": "^3.15.0",
     "svelte-preprocess": "^3.2.6"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.svelte$": "jest-transform-svelte"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "svelte"
+    ],
+    "roots": [
+      "<rootDir>/src/",
+      "<rootDir>/tests/"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ]
   }
 }
