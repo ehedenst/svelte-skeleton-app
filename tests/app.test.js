@@ -9,7 +9,7 @@ describe('App', () => {
   test('must render greeting', () => {
     const { getByText } = render(App, { props: { name: 'world' } });
 
-    expect(getByText('Hello world!'));
+    expect(getByText('Hello world!')).toBeDefined();
   });
 
   test('must snapshot', () => {

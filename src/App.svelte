@@ -1,6 +1,7 @@
 <script>
   export let name;
   console.log("hel");
+  foo = "";
 </script>
 
 <style>
