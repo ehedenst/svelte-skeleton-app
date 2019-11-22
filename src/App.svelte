@@ -1,5 +1,6 @@
 <script>
   export let name;
+  console.log("hel");
 </script>
 
 <style>

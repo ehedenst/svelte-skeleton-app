@@ -1,3 +1,8 @@
 {
-    "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "eslint.lintTask.enable": true,
+  "eslint.lintTask.options": "src/",
+  "eslint.options": {
+    "extensions": [".svelte", ".js"]
+  }
 }

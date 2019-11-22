@@ -7,4 +7,6 @@ const app = new App({
   }
 });
 
+console.log('hello');
+
 export default app;

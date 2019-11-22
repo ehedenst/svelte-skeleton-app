@@ -6,8 +6,9 @@
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",
-    "build": "yarn lint && npx prettier --write --plugin-search-dir=. ./**/*.svelte && parcel build --no-source-maps index.html",
-    "lint": "eslint --cache --ext .js src/",
+    "build": "yarn lint && yarn format && parcel build --no-source-maps index.html",
+    "format": "prettier --write --plugin-search-dir=. ./**/*.svelte",
+    "lint": "eslint --cache --ext .js --ext .svelte src/",
     "lint:fix": "eslint --cache --ext .js --fix --rule --rule \"no-debugger: 0\" src/"
   },
   "devDependencies": {
@@ -47,6 +48,13 @@
   },
   "eslintConfig": {
     "parser": "babel-eslint",
+    "env": {
+      "browser": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
     "plugins": [
       "svelte3"
     ],
