@@ -89,7 +89,8 @@
   },
   "wallaby": {
     "files": [
-      "src/**/*.js"
+      "src/**/*.js",
+      "src/**/*.svelte"
     ],
     "tests": [
       "tests/**/*.js"
