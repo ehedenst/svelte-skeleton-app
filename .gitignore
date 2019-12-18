@@ -1,3 +1,7 @@
 node_modules
-dist
+public/build
+yarn-error.log
 .cache
+.eslintcache
+.coverage
+.quokka

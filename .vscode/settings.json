@@ -1,3 +1,11 @@
 {
-    "editor.formatOnSave": true
+  "npm.packageManager": "yarn",
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false,
+  "svelte.plugin.css.diagnostics.enable": false,
+  "svelte.plugin.typescript.diagnostics.enable": false,
+  "editor.formatOnSave": true,
+  "eslint.lintTask.enable": true,
+  "eslint.packageManager": "yarn",
+  "eslint.validate": ["javascript", "svelte", "html"]
 }
