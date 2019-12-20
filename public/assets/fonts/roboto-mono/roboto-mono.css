@@ -1,0 +1,109 @@
+/* prettier-ignore */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Mono Thin'),
+       local('RobotoMono-Thin'),
+       url('roboto-mono-100.woff2') format('woff2'),
+       url('roboto-mono-100.woff') format('woff');
+}
+
+/* prettier-ignore */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Roboto Mono Thin Italic'),
+       local('RobotoMono-ThinItalic'),
+       url('roboto-mono-100i.woff2') format('woff2'),
+       url('roboto-mono-100i.woff') format('woff');
+}
+
+/* prettier-ignore */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Mono Light'),
+       local('RobotoMono-Light'),
+       url('roboto-mono-300.woff2') format('woff2'),
+       url('roboto-mono-300.woff') format('woff');
+}
+
+/* prettier-ignore */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Roboto Mono Light Italic'),
+       local('RobotoMono-LightItalic'),
+       url('roboto-mono-300i.woff2') format('woff2'),
+       url('roboto-mono-300i.woff') format('woff');
+}
+
+/* prettier-ignore */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Mono'),
+       local('RobotoMono-Regular'),
+       url('roboto-mono-400.woff2') format('woff2'),
+       url('roboto-mono-400.woff') format('woff');
+}
+
+/* prettier-ignore */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Mono Italic'),
+       local('RobotoMono-Italic'),
+       url('roboto-mono-400i.woff2') format('woff2'),
+       url('roboto-mono-400i.woff') format('woff');
+}
+
+/* prettier-ignore */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Mono Medium'),
+       local('RobotoMono-Medium'),
+       url('roboto-mono-500.woff2') format('woff2'),
+       url('roboto-mono-500.woff') format('woff');
+}
+
+/* prettier-ignore */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Roboto Mono Medium Italic'),
+       local('RobotoMono-MediumItalic'),
+       url('roboto-mono-500i.woff2') format('woff2'),
+       url('roboto-mono-500i.woff') format('woff');
+}
+
+/* prettier-ignore */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Mono Bold'),
+       local('RobotoMono-Bold'),
+       url('roboto-mono-700.woff2') format('woff2'),
+       url('roboto-mono-700.woff') format('woff');
+}
+
+/* prettier-ignore */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Roboto Mono Bold Italic'),
+       local('RobotoMono-BoldItalic'),
+       url('roboto-mono-700i.woff2') format('woff2'),
+       url('roboto-mono-700i.woff') format('woff');
+}

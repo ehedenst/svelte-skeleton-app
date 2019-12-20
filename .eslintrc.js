@@ -4,12 +4,14 @@ module.exports = {
     browser: true
   },
   extends: ['eslint:recommended', 'plugin:jest/recommended', 'prettier'],
-  ignorePatterns: ['node_modules/', 'public/build/'],
-  plugins: ['svelte3'],
+  ignorePatterns: ['node_modules/', 'public/build/', '!.eslintrc.js'],
+  plugins: ['html', 'svelte3'],
   overrides: [
     {
-      files: ['**/*.svelte'],
-      processor: 'svelte3/svelte3'
+      files: ['./*.js'],
+      env: {
+        node: true
+      }
     },
     {
       files: ['**/*.test.js'],
@@ -18,10 +20,8 @@ module.exports = {
       }
     },
     {
-      files: ['./*.js'],
-      env: {
-        node: true
-      }
+      files: ['**/*.svelte'],
+      processor: 'svelte3/svelte3'
     }
   ]
 };

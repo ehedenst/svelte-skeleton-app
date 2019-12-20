@@ -13,9 +13,27 @@ exports[`App must snapshot 1`] = `
     </h1>
      
     <div
-      class="text-purple-500"
+      class="font-sans text-purple-500"
     >
-      Testing
+      Sans
+    </div>
+     
+    <div
+      class="font-serif text-purple-500"
+    >
+      Serif
+    </div>
+     
+    <div
+      class="font-mono text-purple-500"
+    >
+      Mono
+    </div>
+     
+    <div
+      class="font-condensed text-purple-500"
+    >
+      Condensed
     </div>
      
     <i
