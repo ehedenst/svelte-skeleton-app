@@ -1,6 +1,14 @@
 <script>
   import Tailwindcss from './Tailwindcss.svelte';
+  import { onMount } from 'svelte';
   export let name;
+
+  let data = [];
+
+  onMount(async function() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+    data = await response.json();
+  });
 </script>
 
 <style>
@@ -17,3 +25,9 @@
 <div class="font-mono text-purple-500">Mono</div>
 <div class="font-condensed text-purple-500">Condensed</div>
 <i class="text-purple-500 material-icons md-48">face</i>
+
+{#each data as item}
+  <div>
+    <p>{item.title}</p>
+  </div>
+{/each}
