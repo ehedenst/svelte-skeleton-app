@@ -4,20 +4,35 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="Description" content="Template for building Svelte apps." />
+    <meta name="theme-color" content="#FF3E00" />
 
     <title>Svelte Skeleton App</title>
 
-    <link rel="stylesheet" href="assets/fonts/roboto/roboto.css" />
-    <link rel="stylesheet" href="assets/fonts/roboto-slab/roboto-slab.css" />
-    <link rel="stylesheet" href="assets/fonts/roboto-mono/roboto-mono.css" />
-    <link rel="stylesheet" href="assets/fonts/roboto-condensed/roboto-condensed.css" />
-    <link rel="stylesheet" href="assets/fonts/material-icons/material-icons.css" />
+    <link rel="stylesheet" href="build/bundle.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="assets/fonts/roboto/roboto.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="assets/fonts/roboto-mono/roboto-mono.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="assets/fonts/roboto-slab/roboto-slab.css" media="print" onload="this.media='all'" />
+    <link
+      rel="stylesheet"
+      href="assets/fonts/roboto-condensed/roboto-condensed.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/fonts/material-icons/material-icons.css"
+      media="print"
+      onload="this.media='all'"
+    />
 
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
-    <link rel="stylesheet" href="build/bundle.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" href="assets/images/icon-128.png" />
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon-192.png" />
 
     <script defer src="build/bundle.js"></script>
   </head>
 
-  <body class="font-sans"></body>
+  <body class="font-sans">
+    Javascript required
+  </body>
 </html>

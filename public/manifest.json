@@ -1,0 +1,28 @@
+{
+  "short_name": "Svelte",
+  "name": "Svelte Skeleton App",
+  "description": "A template for creating svelte apps",
+  "icons": [
+    {
+      "src": "assets/images/icon-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "assets/images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "?source=pwa",
+  "background_color": "#EEEEEE",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "theme_color": "#FF3E00"
+}
