@@ -20,10 +20,10 @@
 <Tailwindcss />
 
 <h1>Hello {name}!</h1>
-<div class="font-sans text-purple-500">Sans</div>
-<div class="font-serif text-purple-500">Serif</div>
-<div class="font-mono text-purple-500">Mono</div>
-<div class="font-condensed text-purple-500">Condensed</div>
+<div class="font-sans text-purple-600">Sans</div>
+<div class="font-serif text-purple-600">Serif</div>
+<div class="font-mono text-purple-600">Mono</div>
+<div class="font-condensed text-purple-600">Condensed</div>
 <i class="text-purple-500 material-icons md-48">face</i>
 
 {#each data as item}
