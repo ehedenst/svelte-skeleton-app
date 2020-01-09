@@ -13,25 +13,25 @@ exports[`App must snapshot 1`] = `
     </h1>
      
     <div
-      class="font-sans text-purple-500"
+      class="font-sans text-purple-600"
     >
       Sans
     </div>
      
     <div
-      class="font-serif text-purple-500"
+      class="font-serif text-purple-600"
     >
       Serif
     </div>
      
     <div
-      class="font-mono text-purple-500"
+      class="font-mono text-purple-600"
     >
       Mono
     </div>
      
     <div
-      class="font-condensed text-purple-500"
+      class="font-condensed text-purple-600"
     >
       Condensed
     </div>
@@ -41,6 +41,20 @@ exports[`App must snapshot 1`] = `
     >
       face
     </i>
+     
+    <div>
+      <p>
+        item1
+      </p>
+       
+    </div>
+    <div>
+      <p>
+        item2
+      </p>
+       
+    </div>
+    
   </div>
 </body>
 `;

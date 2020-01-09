@@ -4,7 +4,8 @@ module.exports = function() {
       'src/**/*.js',
       'src/**/*.svelte',
       '!src/main.js',
-      { pattern: '*.config.js', instrument: false, load: false, ignore: false }
+      { pattern: '*.config.js', instrument: false, load: false, ignore: false },
+      { pattern: 'jest.setup.js', instrument: false, load: false, ignore: false }
     ],
 
     tests: ['tests/**/*.test.js'],

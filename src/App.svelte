@@ -5,7 +5,7 @@
 
   let data = [];
 
-  onMount(async function() {
+  onMount(async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/todos');
     data = await response.json();
   });
