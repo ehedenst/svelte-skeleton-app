@@ -1,3 +1,4 @@
+import fs from 'fs';
 import babel from 'rollup-plugin-babel';
 import serve from 'rollup-plugin-serve';
 import svelte from 'rollup-plugin-svelte';
@@ -8,6 +9,20 @@ import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 
 const production = !process.env.ROLLUP_WATCH;
+
+const serveOptions = {
+  contentBase: './public',
+  open: false,
+  host: 'localhost',
+  port: 5000
+};
+
+if (fs.existsSync('.https.key') && fs.existsSync('.https.crt')) {
+  serveOptions['https'] = {
+    key: fs.readFileSync('.https.key'),
+    cert: fs.readFileSync('.https.crt')
+  };
+}
 
 export default {
   input: 'src/main.js',
@@ -43,7 +58,7 @@ export default {
     commonjs(),
 
     // Serve your rolled up bundle like webpack-dev-server
-    !production && serve({ contentBase: './public', open: false, host: 'localhost', port: 5000 }),
+    !production && serve(serveOptions),
 
     // Watch the `public` directory and refresh the
     // browser on changes when not in production

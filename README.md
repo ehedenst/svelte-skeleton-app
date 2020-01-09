@@ -1,6 +1,6 @@
 # svelte skeleton app
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at <https://github.com/ehedenst/svelte-template.>
+This is a project template for [Svelte](https://svelte.dev) apps. It lives at <https://github.com/ehedenst/svelte-skeleton-app.>
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
@@ -23,12 +23,22 @@ yarn
 ...then start [Rollup](https://rollupjs.org):
 
 ```bash
-yarn serve
+yarn start
 ```
 
 Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `serve` plugin in rollup.config.js and set the host to '0.0.0.0'.
+
+### Enabling HTTPS
+
+If there is a certificate and key file present, the `yarn start` command will use HTTPS. The certificate file needs to be named `.https.crt`, and the key file should be named `.https.key`.
+
+To easily generate development certificates for `localhost` you can use [mkcert](https://github.com/FiloSottile/mkcert). Once `mkcert` is installed simply issue the following command to generate both a certificate and key file.
+
+```bash
+mkcert -key-file .https.key -cert-file .https.crt localhost 127.0.0.1 ::1
+```
 
 ## Building and running in production mode
 
@@ -54,8 +64,6 @@ Then, from within your project folder:
 cd public
 now deploy --name my-project
 ```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
 
 ### With [surge](https://surge.sh/)
 
