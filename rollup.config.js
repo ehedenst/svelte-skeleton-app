@@ -17,11 +17,17 @@ const serveOptions = {
   port: 5000
 };
 
+const livereloadOptions = {
+  watch: './public',
+  verbose: false
+};
+
 if (fs.existsSync('.https.key') && fs.existsSync('.https.crt')) {
-  serveOptions['https'] = {
+  serveOptions.https = {
     key: fs.readFileSync('.https.key'),
     cert: fs.readFileSync('.https.crt')
   };
+  livereloadOptions.https = serveOptions.https;
 }
 
 export default {
@@ -62,7 +68,7 @@ export default {
 
     // Watch the `public` directory and refresh the
     // browser on changes when not in production
-    !production && livereload('public'),
+    !production && livereload(livereloadOptions),
 
     // If we're building for production (yarn build
     // instead of yarn serve), minify
