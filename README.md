@@ -48,6 +48,16 @@ To create an optimised version of the app:
 yarn build
 ```
 
+## Updating PWA content
+
+To generate icons and splashscreens for your PWA simply modify `public/assets/logo.svg` and then regenerate the assets by running:
+
+```bash
+yarn assets
+```
+
+Information on how to modify how and what assets are generated cane be found in the [pwa-asset-generator](https://github.com/onderceylan/pwa-asset-generator#readme) documentation.
+
 ## Deploying to the web
 
 ### With [now](https://zeit.co/now)

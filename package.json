@@ -7,6 +7,7 @@
     "start": "rollup -c -w",
     "build": "rollup -c",
     "test": "jest",
+    "assets": "cd public && pwa-asset-generator ./assets/logo.svg ./assets/images -f -i ./index.html -m ./manifest.json && prettier --write --plugin-search-dir=.. index.html ",
     "format": "prettier --write --plugin-search-dir=. ./**/{*.js,*.svelte}",
     "lint": "eslint --cache --ext .js --ext .svelte tests/ src/"
   },
@@ -34,6 +35,7 @@
     "postcss-preset-env": "^6.7.0",
     "prettier": "^1.19.1",
     "prettier-plugin-svelte": "^0.7.0",
+    "pwa-asset-generator": "^2.1.3",
     "rollup": "^1.29.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
